@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'main/index'
   get 'documentary_films/index'
   get 'documentary_films/create'
   get 'documentary_films/new'
@@ -11,5 +12,5 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  # root "articles#index"
+  root "main#index"
 end
