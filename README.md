@@ -9,7 +9,7 @@ _Proyecto para mostrar información sobre películas, series y documentales._
 Para descargar (clonar) este repositorio debes ejecutar en tu cónsola:
 
 ```hash
-git clone https://github.com/apinango70/proyecto_lens
+git clone https://github.com/apinango70/media_info
 ```
 
 El proyecto, dentro de toda su estructura
