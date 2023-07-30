@@ -13,4 +13,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "main#index"
+
+
+	resources :movies, :series, :documentary_films
+
+
 end
