@@ -1,5 +1,21 @@
-<ul>
-  <% records.each do |p| %>
-    <li><%= p.name %> - <%= p.director %> - <%= p.synopsis %></li>
-  <% end %>
-</ul>
+<!-- Despliegue de los datos en una tabla de Bootstrap -->
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Director</th>
+      <th>Synopsis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% records.each do |record| %>
+      <tr>
+        <td><%= record.name %></td>
+        <td><%= record.director %></td>
+        <td><%= record.synopsis %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+

@@ -1,13 +1,13 @@
-
-
-
 <div class="movie-container ">
   <h1>Movies</h1>
 </div>
+<!--  Botón crear nuevo registro -->
 <div class="d-grid gap-2 col-4 mx-auto">
-
-<%= button_to "Create new Movie record", new_movie_path, method: :get, class: "btn btn-success", id: "boton" %>
+  <%= button_to "Create new Movie record", new_movie_path, method: :get, class: "btn btn-success", id: "boton" %>
 </div>
-<%= render partial: 'shared/listado', locals: { records: @movies } %>
 
+ <!--Muestro el mensaje de reistro creado correctamente-->
+<%= notice %>
+<!--  Muestro todos los registros -->
+<%= render partial: 'shared/listado', locals: { records: @movies } %>
 
