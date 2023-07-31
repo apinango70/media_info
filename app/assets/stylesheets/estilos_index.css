@@ -1,8 +1,7 @@
 
-/* app/assets/stylesheets/main.css */
 .main-container {
   position: relative;
-  background-image: url('background.jpg'); /* Fondo de la página */
+  background-image: url('background.jpg'); /* Fondo de la página principal*/
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -26,11 +25,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('raster.png'); /* Fondo repetido */
+  background-image: url('raster.png'); /* Fondo conlineas */
   background-repeat: repeat; /* Repetir el fondo */
   z-index: 2; /* Capa encima de la capa gris */
 }
-
 
 .main-container h1 {
   color: white; /* Color blanco para el texto */
@@ -38,21 +36,36 @@
   top: 50%; /* Ajustar la posición verticalmente */
   left: 50%; /* Ajustar la posición horizontalmente */
   transform: translate(-50%, -50%); /* Centrar el elemento en el centro */
-  z-index: 3; /* Capa encima de todas las capas */
   line-height: 1.5; /* Ajustar la separación entre líneas */
+  z-index: 3; /* Capa encima de todas las capas */
 }
 h1{
   text-align: center;
 	margin-bottom:100px;
 	font-size:74px;
 	line-height:70px;
-	color:#ccc;
+	color:#ffffff;
 	text-transform:uppercase;
 	text-shadow :2px 2px #151515;
-	-moz-text-shadow :1px 1px #151515;
-	-webkit-text-shadow :1px 1px #151515;
-	-o-text-shadow :1px 1px #151515;
-	-khtml-text-shadow :1px 1px #151515;
+}
+
+/* Estilos para el contenedor principal en las vistas de Movie, Series y DocumentaryFilms */
+.movie-container,
+.series-container,
+.documentary-films-container {
+  background-color: rgb(40, 26, 231); /* Color de fondo azul claro */
+  position: relative; /* Para que el texto h1 se posicione correctamente */
+  width: 100%; /* Ocupar todo el ancho de la ventana gráfica */
+  height: 15vh; /* Ocupar todo el alto de la ventana gráfica */
 
 }
 
+
+#boton{
+  margin: 5rem;
+}
+
+
+.margen{
+  margin-top: 50px;
+}
