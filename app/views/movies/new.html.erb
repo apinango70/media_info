@@ -1,3 +1,20 @@
+<div class="movie-container ">
 <h1>Movies#new</h1>
+</div>
 
+<div class="d-grid gap-2  mx-auto margen">
+  <%= form_with(model: @movie, url: movies_path) do |form| %>
+
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+
+    <%= form.label :synopsis %>
+    <%= form.text_area :synopsis %>
+
+    <%= form.label :director %>
+    <%= form.text_field :director %>
+
+    <%= form.submit %>
+  <% end %>
+</div>
 

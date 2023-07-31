@@ -1,6 +1,13 @@
-<h1>Movies</h1>
 
 
+
+<div class="movie-container ">
+  <h1>Movies</h1>
+</div>
+<div class="d-grid gap-2 col-4 mx-auto">
+
+<%= button_to "Create new Movie record", new_movie_path, method: :get, class: "btn btn-success", id: "boton" %>
+</div>
 <%= render partial: 'shared/listado', locals: { records: @movies } %>
 
 
