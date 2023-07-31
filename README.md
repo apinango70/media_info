@@ -46,7 +46,19 @@ Para ejecutar localmente este proyecto, debes garantizar que todas las dependenc
 bundler install
 ```
 
-Una vez que has actualizado todas las gemas, corre el servidor
+Se debe crear la base de datos ejecutando
+
+```hash
+rails db:create
+```
+
+Si qieres ccrear datos de prueba, debes ejecutar el seed.rb con el siguiente comando:
+
+```hash
+rails db:seed
+```
+
+Una vez que has actualizado todas las gemas, creado la base de datos y generado los datos de prueba, debes montar el servidor ejecutando:
 
 ```hash
 rails s
