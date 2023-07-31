@@ -9,9 +9,6 @@
 
 puts "Creando registros para Movies"
 
-
-
-Datos de ejemplo para las películas
 datos_peliculas = [
   { name: 'The Shawshank Redemption', synopsis: 'Dos hombres encarcelados forjan una amistad a lo largo de varios años, encontrando consuelo y redención a través de actos de decencia común.', director: 'Frank Darabont' },
   { name: 'The Godfather', synopsis: 'El patriarca de una dinastía del crimen organizado transfiere el control de su imperio clandestino a su renuente hijo.', director: 'Francis Ford Coppola' },
@@ -64,4 +61,33 @@ documentaries_data.each do |documentary_data|
   DocumentaryFilm.create(documentary_data)
 end
 
+puts "Creando registros para Series"
 
+series_data = [
+  { name: 'La Casa de Papel', synopsis: 'Un grupo de criminales planea y ejecuta atracos a la Fábrica Nacional de Moneda y Timbre de España.', director: 'Álex Pina' },
+  { name: 'Élite', synopsis: 'Tres jóvenes de clase obrera son enviados a Las Encinas, una exclusiva escuela en España, donde el asesinato de un estudiante desencadena una serie de eventos.', director: 'Carlos Montero, Darío Madrona' },
+  { name: 'Narcos', synopsis: 'La serie cuenta la vida del narcotraficante Pablo Escobar y la lucha de las autoridades para capturarlo.', director: 'Chris Brancato, Carlo Bernard, Doug Miro' },
+  { name: 'Stranger Things', synopsis: 'Un grupo de niños enfrenta misterios sobrenaturales y un mundo paralelo al intentar encontrar a un amigo desaparecido.', director: 'Matt Duffer, Ross Duffer' },
+  { name: 'La Reina del Flow', synopsis: 'Una joven talentosa busca venganza contra quienes la traicionaron en su pasado y se convierte en una exitosa cantante de reguetón.', director: 'Andrés Salgado' },
+  { name: 'Black Mirror', synopsis: 'Cada episodio presenta una historia independiente que aborda temas oscuros y futuros distópicos relacionados con la tecnología y la sociedad.', director: 'Charlie Brooker' },
+  { name: 'The Crown', synopsis: 'La serie sigue la vida de la reina Isabel II desde su boda en 1947 hasta la actualidad, explorando los eventos históricos y las intrigas políticas que tuvieron lugar durante su reinado.', director: 'Peter Morgan' },
+  { name: 'Breaking Bad', synopsis: 'Un profesor de química diagnosticado con cáncer se convierte en un narcotraficante para asegurar el futuro financiero de su familia.', director: 'Vince Gilligan' },
+  { name: 'Friends', synopsis: 'La serie sigue la vida de seis amigos que viven en Nueva York y enfrentan los altibajos de la vida y las relaciones.', director: 'David Crane, Marta Kauffman' },
+  { name: 'Game of Thrones', synopsis: 'Basada en la serie de libros "Canción de hielo y fuego" de George R.R. Martin, la serie narra la lucha por el trono de hierro en el continente ficticio de Westeros.', director: 'David Benioff, D.B. Weiss' },
+  { name: 'The Witcher', synopsis: 'Basada en la saga de libros de fantasía de Andrzej Sapkowski, sigue la historia del cazador de monstruos Geralt de Rivia en un mundo lleno de criaturas mágicas y políticas corruptas.', director: 'Lauren Schmidt Hissrich' },
+  { name: 'Money Heist', synopsis: 'Un grupo de delincuentes se infiltra en la Fábrica Nacional de Moneda y Timbre de España para llevar a cabo un elaborado atraco.', director: 'Álex Pina' },
+  { name: 'Peaky Blinders', synopsis: 'La serie sigue la vida de la familia criminal Shelby en el Birmingham de la posguerra y su crecimiento en el mundo del crimen organizado.', director: 'Steven Knight' },
+  { name: 'The Mandalorian', synopsis: 'Ambientada en el universo de Star Wars, sigue las aventuras de un cazarrecompensas en las fronteras de la galaxia.', director: 'Jon Favreau' },
+  { name: 'Chernobyl', synopsis: 'La serie dramatiza los eventos del desastre nuclear de Chernobyl en 1986 y las consecuencias políticas y sociales que siguieron.', director: 'Craig Mazin' },
+  { name: 'The Big Bang Theory', synopsis: 'La serie sigue la vida diaria de los empleados de una oficina de ventas en Scranton, Pensilvania.', director: 'Greg Daniels, Ricky Gervais, Stephen Merchant' },
+  { name: 'Stranger Things', synopsis: 'Un grupo de niños enfrenta misterios sobrenaturales y un mundo paralelo al intentar encontrar a un amigo desaparecido.', director: 'Matt Duffer, Ross Duffer' },
+  { name: 'The Office', synopsis: 'Una comedia que sigue la vida de los empleados de una oficina de ventas en Scranton, Pensilvania.', director: 'Greg Daniels, Ricky Gervais, Stephen Merchant' },
+  { name: 'Sherlock', synopsis: 'Basada en los personajes de Sherlock Holmes, la serie sigue al detective y su compañero, el Dr. John Watson, mientras resuelven casos complejos.', director: 'Mark Gatiss, Steven Moffat' },
+  { name: 'The Haunting of Hill House', synopsis: 'La serie sigue a una familia que creció en una casa embrujada y los traumas que todavía los persiguen años después.', director: 'Mike Flanagan' },
+  { name: 'Vikings', synopsis: 'La serie sigue las leyendas de Ragnar Lothbrok y sus hijos mientras conquistan nuevos territorios y luchan por el poder en el mundo vikingo.', director: 'Michael Hirst' }
+]
+
+# Crear las series
+series_data.each do |serie_data|
+  Series.create(serie_data)
+end
