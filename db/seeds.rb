@@ -89,5 +89,5 @@ series_data = [
 
 # Crear las series
 series_data.each do |serie_data|
-  Series.create(serie_data)
+  Serie.create(serie_data)
 end
