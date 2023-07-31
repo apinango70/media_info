@@ -14,3 +14,8 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym "RESTful"
 # end
+
+# Se agrega esta línea para especificar la inflexión de "Serie"
+ActiveSupport::Inflector.inflections(:en) do |inflect|
+  inflect.irregular 'serie', 'series'
+end
