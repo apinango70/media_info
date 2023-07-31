@@ -1,7 +1,16 @@
 
-<div class="documentary-films-container">
+<div class="movie-container ">
   <h1>Documentary Films</h1>
 </div>
 
+<!--  Botón crear nuevo registro -->
+<div class="d-grid gap-2 col-4 mx-auto">
+  <%= button_to "Create new Documentary Film record", new_documentary_film_path, method: :get, class: "btn btn-success", id: "boton" %>
+
+</div>
 
 <%= render partial: 'shared/listado', locals: { records: @documentary_films } %>
+
+
+
+
