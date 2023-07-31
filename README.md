@@ -40,16 +40,17 @@ https://www.postgresql.org/
 
 ### Instalación 🔧
 
-Para ejecutar localmente este proyecto, debes garantizar que todas las dependencias de gemas estén configuradas correctamente, para eso debes ejecutar
+Para mostrar localmente este proyecto, debes garantizar que todas las dependencias de gemas estén configuradas correctamente, para eso debes ejecutar:
 
 ```hash
-bundler install
+bundle install
 ```
 
-Se debe crear la base de datos ejecutando
+Se debe crear la base de datos y correr la migración ejecutando:
 
 ```hash
 rails db:create
+rails db:migrate
 ```
 
 Si qieres ccrear datos de prueba, debes ejecutar el seed.rb con el siguiente comando:
@@ -58,10 +59,15 @@ Si qieres ccrear datos de prueba, debes ejecutar el seed.rb con el siguiente com
 rails db:seed
 ```
 
-Una vez que has actualizado todas las gemas, creado la base de datos y generado los datos de prueba, debes montar el servidor ejecutando:
+Una vez que se han actualizado todas las gemas, creado la base de datos y generado los datos de prueba, se debe montar el servidor ejecutando:
 
 ```hash
 rails s
+```
+En el navegador debes ir a la página:
+
+```hash
+localhost:3000/
 ```
 
 ## Despliegue 📦
